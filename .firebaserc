@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "novabot-scabam"
+    "default": "novabot-scabam",
+    "Novatics": "novabot-scabam"
   }
 }

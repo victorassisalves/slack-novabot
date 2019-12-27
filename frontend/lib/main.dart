@@ -28,9 +28,19 @@ class _MyHomePageState extends State<MyHomePage> {
 
      appBar: AppBar(
        backgroundColor: novaColor,
-       title: Image.asset('assets/MarcaNovatics_negativo.png', fit: BoxFit.contain, height: 20)),
-        //  Text('Novaquotes')),
-     body: _buildBody(context),
+       title: Row(
+         children: <Widget>[
+            Image.asset('assets/MarcaNovatics_negativo.png', fit: BoxFit.contain, height: 20),
+            Center(
+              child: Padding(
+                padding: EdgeInsets.all(16.0),
+                child:Text("Novaquotes"),
+              ),
+            )
+         ],
+       ),
+     ),
+      body: _buildBody(context),
    );
  }
 
@@ -57,30 +67,37 @@ Widget _buildBody(BuildContext context) {
      children: snapshot.map((data) => _buildListItem(context, data)).toList(),
    );
  }
+ 
 
  Widget _buildListItem(BuildContext context, DocumentSnapshot data) {
-   final record = Record.fromSnapshot(data);
-
-   return Padding(
-     key: ValueKey(record.text),
-     padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-     child: Container(
-       decoration: BoxDecoration(
-         border: Border.all(color: Colors.grey),
-         borderRadius: BorderRadius.circular(5.0),
-       ),
-       child: ListTile(
-         title: Text("\"${record.text}\""),
-         subtitle: Text("Autor: @${record.author}"),
-         trailing: Icon(
-           Icons.favorite,
-           color: Colors.grey,
-           size: 24.0,
-           semanticLabel: 'Text to announce in accessibility modes',
-         ),
-         onTap: () => print(record),
-       ),
-     ),
+  final record = Record.fromSnapshot(data);
+  Color likeColor = Color(0xFFABAEB6);
+  return Padding(
+    key: ValueKey(record.text),
+    padding: const EdgeInsets.symmetric(horizontal: 12.0, vertical: 6.0),
+    child: Container(
+      decoration: BoxDecoration(
+        border: Border.all(color: Colors.grey),
+        borderRadius: BorderRadius.circular(5.0),
+      ),
+      child: ListTile(
+        leading:  CircleAvatar(
+          backgroundImage: ExactAssetImage('assets/yurick.jpg'),
+          minRadius: 20,
+          maxRadius: 35,
+        ),
+          title: Text("\"${record.text}\""),
+          subtitle: Text("By: @${record.author}"),
+          trailing: Icon(
+            Icons.favorite,
+            color: likeColor,
+            size: 24.0,
+            semanticLabel: 'Text to announce in accessibility modes',
+          ),
+          onTap: () {
+          },    
+        ),
+    ),
    );
  }
 }
