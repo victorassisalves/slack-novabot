@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
-
+Color novaColor = const Color(0xFF1F6BFF);
 class MyApp extends StatelessWidget {
  @override
  Widget build(BuildContext context) {
@@ -25,21 +25,20 @@ class _MyHomePageState extends State<MyHomePage> {
  @override
  Widget build(BuildContext context) {
    return Scaffold(
-     appBar: AppBar(title: Text('Novaquotes')),
+
+     appBar: AppBar(
+       backgroundColor: novaColor,
+       title: Image.asset('assets/MarcaNovatics_negativo.png', fit: BoxFit.contain, height: 20)),
+        //  Text('Novaquotes')),
      body: _buildBody(context),
    );
  }
-
-//  Widget _buildBody(BuildContext context) {
-//    // TODO: get actual snapshot from Cloud Firestore
-//    return _buildList(context, dummySnapshot);
-//  }
 
 Widget _buildBody(BuildContext context) {
  return StreamBuilder<QuerySnapshot>(
    stream: Firestore.instance.collection('quotes').snapshots(),
    builder: (context, snapshot) {
-
+     Container(child: Text("Quotes..."),);
      if (!snapshot.hasData) return LinearProgressIndicator();
      if (snapshot.hasError)
           return new Text('Error: ${snapshot.error}');
