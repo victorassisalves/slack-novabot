@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "955432459433",
+    "firebase_url": "https://novabot-scabam.firebaseio.com",
+    "project_id": "novabot-scabam",
+    "storage_bucket": "novabot-scabam.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:955432459433:android:375fdb6d4f8a7d398d5db8",
+        "android_client_info": {
+          "package_name": "novaquote.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "955432459433-aattd2b1ld20kp77jg8h7ep9tog88dcm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3U6jmeuTIKfYlivW522mV7R57Rsd1P_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "955432459433-aattd2b1ld20kp77jg8h7ep9tog88dcm.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "955432459433-k4cn8nhvcsntnf7toutau1637dbbk6dl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "novaquote.test"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
