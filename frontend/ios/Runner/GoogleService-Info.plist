@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>955432459433-k4cn8nhvcsntnf7toutau1637dbbk6dl.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.955432459433-k4cn8nhvcsntnf7toutau1637dbbk6dl</string>
+	<key>API_KEY</key>
+	<string>AIzaSyChXK73FpFnqRLQHqJSJGZUOAhvNmNQiH8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>955432459433</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>novaquote.test</string>
+	<key>PROJECT_ID</key>
+	<string>novabot-scabam</string>
+	<key>STORAGE_BUCKET</key>
+	<string>novabot-scabam.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:955432459433:ios:5001761deb8290748d5db8</string>
+	<key>DATABASE_URL</key>
+	<string>https://novabot-scabam.firebaseio.com</string>
+</dict>
+</plist>
